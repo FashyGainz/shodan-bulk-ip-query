@@ -2,7 +2,7 @@ import json
 import shodan
 import argparse
 import time
-SHODAN_API_KEY = "ZwSefHpz3jcNbqw4R5YmOuk3GKhbjCZw"
+SHODAN_API_KEY = "<YOUR API KEY HERE>"
 api = shodan.Shodan(SHODAN_API_KEY)
 
 parser = argparse.ArgumentParser(description='Get a list of IPs and return shodan info.')
