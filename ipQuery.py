@@ -20,10 +20,15 @@ for ip in ips:
                 hostinfo = api.host(ip)
                 awsInfo[ip] = hostinfo
                 time.sleep(2)
-                print "Info collected"
+                print "Info collected, dumping raw output for host"
+
+                #new clean print job
+                print hostinfo
+
         except shodan.APIError, e:
                 awsInfo[ip] = '{}'.format(e)
                 time.sleep(2)
-                print "No information found"
+                print "No information found, giving up on host"
 
-print json.dumps(awsInfo)
+# Old dirty print job
+#print json.dumps(awsInfo)
