@@ -7,11 +7,11 @@ This tool gets a list of IPs in a file (one IP per line) and queries shodan.io. 
 `# python -f myawesomepath/myawesomefilename.foo`
 
 # TODO
-- Throttling for big queries.
+- ~~Throttling for big queries.~~
 
 Fixed 03/20/19 by adding time.sleep() function with 2 seconds in the try and else. 
 Also added some extra text to tell you when each lookup is completed.
 
-- Combine IPs to make one bulk query.
+- ~~Combine IPs to make one bulk query.~~
 
 Fake and gay. I really dont care about this
