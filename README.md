@@ -6,6 +6,10 @@ This tool gets a list of IPs in a file (one IP per line) and queries shodan.io. 
 
 `# python -f myawesomepath/myawesomefilename.foo`
 
+Download Script: Use this script to look up available information from ip addresses in a list, then output them to be parsed in Shodan CLI.
+
+`# python ipDownload.py <list of ip addresses> <output file>`
+
 # TODO
 - ~~Throttling for big queries.~~
 
